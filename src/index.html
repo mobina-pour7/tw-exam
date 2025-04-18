@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="./output.css" rel="stylesheet">
 </head>
@@ -16,7 +17,7 @@
       <div class="flex items-center">
         <img src="/assests/images/Group.png" alt="لوگو" class="w-10 h-10 md:w-12 md:h-12 ">
         <div class="flex items-center mr-2 md:mr-4">
-          <i class="fas fa-map-marker-alt ml-2 text-orange-500"></i>
+          <i class="fas fa-map-marker-alt ml-6 text-[#939697] "></i>
           <span class="text-xs md:text-sm text-[#939697]">Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)
           </span>
         </div>
@@ -25,14 +26,12 @@
       <!-- بخش سمت چپ (آیکون‌ها) -->
       <div class="flex items-center space-x-4 md:space-x-6 space-x-reverse">
         <div class="flex items-center">
-          <i class="fas fa-phone ml-2 text-sm md:text-base text-orange-500"></i>
-          <span class="text-xs md:text-sm">☘️Записаться на сервис
-            Тест-драйв </span>
+          <i class="fas fa-bahai ml-2 text-sm md:text-base text-[#FF9549]"></i>
+          <span class="text-xs md:text-sm">Записаться на сервис </span>
         </div>
         <div class="flex items-center">
-          <i class="fas fa-envelope ml-2 text-sm md:text-base text-orange-500"></i>
-          <span class="text-xs md:text-sm">ʘЗаписаться на сервис
-            Тест-драйв</span>
+          <i class="fab fa-safari ml-2 text-sm md:text-base text-[#FF9549]"></i>
+          <span class="text-xs md:text-sm">Тест-драйв</span>
         </div>
       </div>
     </div>
@@ -50,7 +49,7 @@
         <h1 class="text-xl md:text-3xl font-bold mb-2 md:mb-0">АВТОРУСЬ TANK</h1>
         <div class="h-8 w-px bg-gray-600 mx-0 md:mx-4 my-2 md:my-0"></div>
         <div class="text-xs md:text-sm">
-          <p class="font-bold mt-1 ">
+          <p class=" mt-1 ">
             Официальный дилер</p>
         </div>
       </div>
@@ -61,7 +60,7 @@
         <p class=" mt-1 text-[#939697] ">
           🟢Мы на связи </p>
       </div>
-      <button class="bg-[#FF9549] hover:bg-neutral-700 text-white px-4 py-2 flex items-center rounded-2xl md:self-auto">
+      <button class="bg-[#FF9549] hover:bg-neutral-700 text-black px-4 py-2 flex items-center rounded-2xl md:self-auto">
         <i class="fas fa-phone ml-2"></i>
         Заказать звонок
       </button>
@@ -100,7 +99,7 @@
   <div class="bg-[#1C2121] text-white px-4 py-8 space-y-8">
 
     <div class="flex flex-col md:flex-row items-center justify-between bg-[#252C2C] p-4 rounded-lg max-w-6xl mx-auto">
-      <p class="text-lg font-bold mb-4 md:mb-0">СРОК ДЕЙСТВИЯ СПЕЦПРЕДЛОЖЕНИЯ:</p>
+      <p class="text-lg font-bold mb-4 md:mb-0">СРОК ДЕЙСТВИЯ <br> СПЕЦПРЕДЛОЖЕНИЯ:</p>
 
       <div class="flex space-x-4 mb-4 md:mb-0">
         <div class="flex flex-col items-center">
@@ -128,7 +127,7 @@
         </div>
       </div>
 
-      <button class="bg-[#FF9549] hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded transition">
+      <button class="bg-[#FF9549] hover:bg-gray-500 text-black font-semibold py-2 px-4 rounded transition">
         Узнать цену с выгодами >
       </button>
     </div>
@@ -228,9 +227,242 @@
       </div>
     </section>
   </div>
+  <body class="bg-[#121212] text-white font-sans p-4">
+
+    <!-- Filters -->
+    <div class="max-w-7xl mx-auto mb-6">
+      <h2 class="text-2xl font-bold mb-4">ПОДБЕРИТЕ КОМПЛЕКТАЦИЮ</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <select class="bg-[#1f1f1f] text-white border border-gray-600 rounded-md px-4 py-2">
+          <option>Модель</option>
+        </select>
+        <select class="bg-[#1f1f1f] text-white border border-gray-600 rounded-md px-4 py-2">
+          <option>Комплектация</option>
+        </select>
+        <select class="bg-[#1f1f1f] text-white border border-gray-600 rounded-md px-4 py-2">
+          <option>Двигатель</option>
+        </select>
+        <div></div> <!-- for alignment -->
+      </div>
+    </div>
+  
+    <!-- Car List -->
+    <div class="max-w-7xl mx-auto space-y-6">
+  
+      <!-- Single Car Item -->
+      <div class="border border-gray-700 rounded-xl overflow-hidden p-4 md:flex items-center bg-[#1a1a1a]">
+        <img src="/assests/images/img.png" alt="TANK 300" class="w-full md:w-64 rounded-md" />
+        <div class="md:ml-6 flex-1 mt-4 md:mt-0">
+          <h3 class="text-xl font-bold">TANK 300</h3>
+          <p class="text-sm text-gray-300 mb-2">2.0 л. Бензин, Полный, Автоматическая</p>
+          <div class="text-sm mb-4">
+            <span class="line-through text-gray-400">3 649 000 ₽</span>
+          </div>
+          <div class="flex items-center text-sm text-gray-300 space-x-4 mb-4">
+            <div class="flex items-center space-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M16 17l-4 4m0 0l-4-4m4 4V3"/></svg>
+              <span>Выгода по Trade-in до 450 000 ₽</span>
+            </div>
+            <div class="flex items-center space-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2l4 4H8l4-4z"/></svg>
+              <span>Керамическое покрытие в подарок!</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-2 md:ml-auto md:w-56 mt-4 md:mt-0">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md">Получить предложение</button>
+          <button class="border border-orange-500 text-orange-500 py-2 rounded-md hover:bg-orange-500 hover:text-white transition">Тест-драйв</button>
+        </div>
+      </div>
+    </div>
+    <!-- Car List -->
+    <div class="max-w-7xl mx-auto space-y-6">
+  
+      <!-- Single Car Item -->
+      <div class="border border-gray-700 rounded-xl overflow-hidden p-4 md:flex items-center bg-[#1a1a1a] mt-4">
+        <img src="/assests/images/img.png" alt="TANK 300" class="w-full md:w-64 rounded-md" />
+        <div class="md:ml-6 flex-1 mt-4 md:mt-0">
+          <h3 class="text-xl font-bold">TANK 300</h3>
+          <p class="text-sm text-gray-300 mb-2">2.0 л. Бензин, Полный, Автоматическая</p>
+          <div class="text-sm mb-4">
+            <span class="line-through text-gray-400">3 649 000 ₽</span>
+          </div>
+          <div class="flex items-center text-sm text-gray-300 space-x-4 mb-4">
+            <div class="flex items-center space-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M16 17l-4 4m0 0l-4-4m4 4V3"/></svg>
+              <span>Выгода по Trade-in до 450 000 ₽</span>
+            </div>
+            <div class="flex items-center space-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2l4 4H8l4-4z"/></svg>
+              <span>Керамическое покрытие в подарок!</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-2 md:ml-auto md:w-56 mt-4 md:mt-0">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md">Получить предложение</button>
+          <button class="border border-orange-500 text-orange-500 py-2 rounded-md hover:bg-orange-500 hover:text-white transition">Тест-драйв</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Car List -->
+    <div class="max-w-7xl mx-auto space-y-6">
+  
+      <!-- Single Car Item -->
+      <div class="border border-gray-700 rounded-xl overflow-hidden p-4 md:flex items-center bg-[#1a1a1a] mt-4">
+        <img src="/assests/images/img.png" alt="TANK 300" class="w-full md:w-64 rounded-md" />
+        <div class="md:ml-6 flex-1 mt-4 md:mt-0">
+          <h3 class="text-xl font-bold">TANK 300</h3>
+          <p class="text-sm text-gray-300 mb-2">2.0 л. Бензин, Полный, Автоматическая</p>
+          <div class="text-sm mb-4">
+            <span class="line-through text-gray-400">3 649 000 ₽</span>
+          </div>
+          <div class="flex items-center text-sm text-gray-300 space-x-4 mb-4">
+            <div class="flex items-center space-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M16 17l-4 4m0 0l-4-4m4 4V3"/></svg>
+              <span>Выгода по Trade-in до 450 000 ₽</span>
+            </div>
+            <div class="flex items-center space-x-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2l4 4H8l4-4z"/></svg>
+              <span>Керамическое покрытие в подарок!</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-2 md:ml-auto md:w-56 mt-4 md:mt-0">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md">Получить предложение</button>
+          <button class="border border-orange-500 text-orange-500 py-2 rounded-md hover:bg-orange-500 hover:text-white transition">Тест-драйв</button>
+        </div>
+      </div>
+   
+      <!-- Load More -->
+      <div class="flex justify-center mt-4">
+        <button class="bg-[#2a2a2a] text-white px-6 py-2 rounded-md border border-gray-600 hover:bg-gray-700">Загрузить еще</button>
+      </div>
+  
+    </div>
 
 
+  
 
+  <!-- Trade-in Block -->
+  <div class="flex flex-col md:flex-row items-center bg-black text-white  shadow-md ">
+    <img src="/assests/images/image 290.png" alt="car" class="w-full md:w-1/2 object-cover">
+    <div class="p-6 space-y-4 text-center md:text-left">
+      <h2 class="text-2xl font-bold">ОБМЕН ПО TRADE-IN <br> НА ВЫГОДНЫХ УСЛОВИЯХ</h2>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md">Отправить заявку</button>
+    </div>
+  </div>
+  
+
+  <!-- Credit Request Block -->
+  <div class="relative bg-cover bg-center  overflow-hidden shadow-md" style="background-image: url('/assests/images/image\ 281.png ');">
+    <div class="p-6 md:p-10 text-white">
+      <h2 class="text-2xl md:text-3xl font-bold">ОСТАВЬТЕ ЗАЯВКУ НА КРЕДИТ</h2>
+      <p class="text-sm mb-4">и получите одобрение за 1 день!</p>
+      <form class="space-y-4 max-w-sm">
+        <input type="tel" placeholder="+7 ___ ___ __ __" class="w-full px-4 py-2 rounded-md text-black focus:outline-none" />
+        <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md w-full">Отправить заявку</button>
+        <label class="flex items-start text-xs text-gray-200 space-x-2">
+          <input type="checkbox" class="mt-1 accent-orange-500">
+          <span>Согласен(а) на обработку персональных данных.</span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+
+  
+  <div class="bg-black text-white font-sans">
+    <div class="max-w-6xl mx-auto p-4">
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+        <h1 class="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-0">
+          Индивидуальное предложение для корпоративных клиентов
+        </h1>
+        <button class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md">Отправить заявку</button>
+      </div>
+  
+      <!-- User Info -->
+      <div class="flex items-center space-x-4 mb-6">
+        <img src="/assests/images/image 295.png" alt="avatar" class="rounded-full w-16 h-16">
+        <div>
+          <p class="font-bold text-lg">Татьяна Санникова</p>
+          <p class="text-sm text-gray-300">Отдел корпоративных продаж АВТОРУСЬ</p>
+        </div>
+      </div>
+  
+      <div class="bg-[#1C2121] text-white rounded-lg overflow-hidden shadow-md">
+        <img src="/assests/images/image 289 (1).png" alt="map" class="w-full h-60 object-cover">
+        <div class="p-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+          <div>
+            <p class="font-semibold">Адрес</p>
+            <p>Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)</p>
+          </div>
+          <div>
+            <p class="font-semibold">Телефон</p>
+            <p class="text-green-600">+7 (999) 999-99-99</p>
+            <p>Мы на связи</p>
+          </div>
+          <div>
+            <p class="font-semibold">Режим работы</p>
+            <p>Ежедневно с 09:00 до 21:00</p>
+            <button class="mt-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="bg-[#181818] text-white font-sans">
+
+  <!-- بخش دیسکلیمر -->
+  <section class="p-4 md:p-8">
+    <h2 class="text-white font-semibold mb-4">Дисклеймер^</h2>
+    <div class="space-y-4 text-sm md:text-base text-[#939697]">
+      <p>
+        TANK 300 за 3 799 000руб с учетом поддержек. Цена на модель TANK (ТЭНК) 300 в комплектации Adventure (Эдвенчер) с двигателем 2,0T 4WD, 2023 года производства, цвет автомобиля: белый, с учетом выгоды по трейд-ин 300 000 рублей. В трейд-ин принимаются автомобили с пробегом со сроком владения и регистрации (постановки на учет) в органах ГИБДД не менее 6 месяцев (в отношении автомобилей бренда TANK, Haval, Great Wall – 3 месяца) до сдачи автомобиля в трейд-ин. В качестве документов, подтверждающих срок владения сдаваемого в трейд-ин автомобиля, собственнику необходимо предоставить копию ПТС или СТС или карточку учета ТС из ГИБДД с печатью и подписью. Подробности уточняйте у менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не является офертой и действует с 01.04.2024г.
+        TANK 500 за 5 349 000 руб с учетом поддержек. Цена на модель TANK (ТЭНК) 500 в комплектации Adventure (Эдвенчер) с двигателем 3,0T 4WD, 2023 года производства, цвет автомобиля: белый, с учетом прямой выгоды в 950 000 рублей. Подробности уточняйте у менеджеров отдела продаж TANK АВТОРУСЬ. Предложение ограничено, не является офертой и действует с 01.04.2024г.
+      </p>
+    </div>
+  </section>
+
+  <!-- بخش اطلاعات نمایندگی -->
+  <section class="border-t border-neutral-700 p-4 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-center text-sm text-neutral-400 space-y-4 md:space-y-0">
+    <div>
+      <h3 class="text-white font-medium">АВТОРУСЬ TANK Лосиный Остров</h3>
+      <p>Официальный дилер</p>
+      <p class="mt-2">Ярославское шоссе, владение 2 В, строение 3 (МКАД, 95 км)</p>
+      <p class="mt-1">ООО АВТОРУСЬ МЫТИЩИ / ОГРН - 1147744695161, ИНН - 7728881903</p>
+    </div>
+    <div class="flex flex-col items-start space-y-2">
+      <a href="tel:+79999999999" class="text-orange-400 font-bold text-lg">+7 (999) 999-99-99</a>
+      <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">Заказать звонок</button>
+      <div class="flex space-x-4 mt-2">
+        <button class="underline">Записаться на сервис</button>
+        <button class="underline">Тест-драйв</button>
+      </div>
+    </div>
+  </section>
+  <!-- فوتر -->
+ <div class="border-t border-neutral-700 justify-between items-start md:i text-neutral-400 space-y-4 md:space-y-0">
+    <footer class="bg-[#181818] p-5 font-sans">
+      <div class="container mx-auto">
+          <!-- چیدمان اصلی -->
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+              <!-- متن سمت چپ -->
+              <div class="text-right md:text-right text-[#939697]">
+                © 2024, АВТОРУСЬ TANK
+              </div>
+              <!-- متن‌های سمت راست -->
+              <div class="flex flex-row gap-8 text-[#939697]">
+                  <div>Правовая информация</div>
+                  <div>Условия акции</div>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 
 </html>
