@@ -55,19 +55,83 @@
         </div>
       </div>
 
-      <div class="h-8 w-px mx-0 md:mx-4 my-2 md:my-0"></div>
-      <div class="text-xs md:text-sm  ml-150 ">
-        <p class=" font-bold">+7 (999) 999-99-99</p>
-        <p class=" mt-1 text-[#939697] ">
-          🟢با ما در تماس باشید </p>
+
+      <!-- شماره و دکمه -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+        <div class="text-lg font-semibold">
+          +7 (999) 999-99-99
+          <div class="text-green-400 text-sm">● در دسترس هستیم</div>
+        </div>
+        <button onclick="document.getElementById('modal').classList.remove('hidden')"
+          class="bg-[#FF9549] hover:bg-neutral-700 text-black  px-4 py-2 rounded-md  transition">
+          <i class="fas fa-phone ml-2"></i>
+          درخواست تماس
+        </button>
       </div>
-      <button class="bg-[#FF9549] hover:bg-neutral-700 text-black px-4 py-2 flex items-center rounded-2xl md:self-auto">
+    </div>
+  </header>
+  <!-- Modal -->
+  <div id="modal"
+    class="hidden fixed inset-0 bg-[#252C2C] bg-opacity-95 z-50 flex items-center justify-center px-4 py-8">
+    <div class="bg-black w-full max-w-sm rounded-lg text-white p-5 relative font-vazir space-y-4">
+      <!-- دکمه بستن -->
+      <button onclick="document.getElementById('modal').classList.add('hidden')"
+        class="absolute top-3 left-3 text-white hover:text-amber-200">
+        &times;
+      </button>
+
+      <!-- هدر -->
+      <div class="flex items-center gap-3">
+        <img src="/assests/images/Group.png" alt="لوگو" class="w-10 h-10  object-contain">
+        <div>
+          <h2 class="font-bold ">kermanmotor</h2>
+          <p class="text-sm">نمایندگی رسمی</p>
+        </div>
+      </div>
+
+      <!-- شماره تلفن -->
+      <div class="text-xl font-bold text-white">
+        +7 (999) 999-99-99
+        <div class="text-green-400 text-sm mt-1">● در دسترس هستیم</div>
+      </div>
+      <!-- آدرس -->
+      <div class="text-sm space-y-2">
+        <div class="flex items-center gap-2 text-gray-300">
+          <i class="fas fa-map-marker-alt ml-2 text-[#939697] mr-2 "></i>
+          <span> تهران -سعادت آباد بلوار 24 متری </span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-300">
+          <i class="fab fa-safari ml-2 text-sm md:text-base  "></i>
+          <span>روزانه از 09:00 تا 21:00</span>
+        </div>
+      </div>
+
+      <!-- دکمه تماس -->
+      <button
+        class="w-full bg-[#FF9549] text-black py-2 rounded-lg hover:bg-orange-600 transition flex items-center justify-center gap-2">
         <i class="fas fa-phone ml-2"></i>
         درخواست تماس
       </button>
 
+      <!-- دکمه‌های پایین -->
+      <div class="text-center space-y-2 mt-4">
+        <button class="flex items-center justify-center gap-2 text-orange-400 hover:text-orange-300 transition">
+          <i class="fas fa-bahai ml-2 text-sm md:text-base text-[#FF9549]"></i>
+          رزرو سرویس
+        </button>
+        <button class="flex items-center justify-center gap-2 text-orange-400 hover:text-orange-300 transition">
+          <i class="fab fa-safari ml-2 text-sm md:text-base text-[#FF9549]"></i>
+          تست درایو
+        </button>
+
+      </div>
     </div>
-    </div>
+  </div>
+
+  </header>
+
+  </div>
+  </div>
   </header>
   <div class="relative h-screen w-370">
 
@@ -212,51 +276,51 @@
             <img src="/assests/images/image 289.png" alt="تصویر اصلی" class="w-full h-auto ">
           </div>
         </div>
-  <!-- چهار کادر مشکی -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 text-right">
-    <!-- کادر 1 -->
-    <div class="bg-black text-white p-4 rounded-xl shadow-lg">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-clipboard-check text-[#FF9549] text-2xl"></i>
-        <div>
-          <p class="font-bold">تمامی قطعات با گارانتی اصالت</p>
-          <p class="text-sm text-gray-300">گواهی‌های اصالت و کیفیت</p>
-        </div>
-      </div>
-    </div>
-    <!-- کادر 2 -->
-    <div class="bg-black text-white p-4 rounded-xl shadow-lg">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-shield-alt text-[#FF9549] text-2xl"></i>
-        <div>
-          <p class="font-bold">پشتیبانی خدمات</p>
-          <p class="text-sm text-gray-300">5 سال / 150,000 کیلومتر</p>
-        </div>
-      </div>
-    </div>
-    <!-- کادر 3 -->
-    <div class="bg-black text-white p-4 rounded-xl shadow-lg">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-star text-[#FF9549] text-2xl"></i>
-        <div>
-          <p class="font-bold">تضمین رضایت مشتری</p>
-          <p class="text-sm text-gray-300">رضایت 100% مشتریان</p>
-        </div>
-      </div>
-    </div>
-    <!-- کادر 4 -->
-    <div class="bg-black text-white p-4 rounded-xl shadow-lg">
-      <div class="flex items-center gap-3">
-        <i class="fas fa-percent
+        <!-- چهار کادر مشکی -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 text-right">
+          <!-- کادر 1 -->
+          <div class="bg-black text-white p-4 rounded-xl shadow-lg">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-clipboard-check text-[#FF9549] text-2xl"></i>
+              <div>
+                <p class="font-bold">تمامی قطعات با گارانتی اصالت</p>
+                <p class="text-sm text-gray-300">گواهی‌های اصالت و کیفیت</p>
+              </div>
+            </div>
+          </div>
+          <!-- کادر 2 -->
+          <div class="bg-black text-white p-4 rounded-xl shadow-lg">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-shield-alt text-[#FF9549] text-2xl"></i>
+              <div>
+                <p class="font-bold">پشتیبانی خدمات</p>
+                <p class="text-sm text-gray-300">5 سال / 150,000 کیلومتر</p>
+              </div>
+            </div>
+          </div>
+          <!-- کادر 3 -->
+          <div class="bg-black text-white p-4 rounded-xl shadow-lg">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-star text-[#FF9549] text-2xl"></i>
+              <div>
+                <p class="font-bold">تضمین رضایت مشتری</p>
+                <p class="text-sm text-gray-300">رضایت 100% مشتریان</p>
+              </div>
+            </div>
+          </div>
+          <!-- کادر 4 -->
+          <div class="bg-black text-white p-4 rounded-xl shadow-lg">
+            <div class="flex items-center gap-3">
+              <i class="fas fa-percent
 
 text-[#FF9549] text-2xl"></i>
-        <div>
-          <p class="font-bold">اعتبار ویژه 5%</p>
-          <p class="text-sm text-gray-300">مخصوص شما</p>
+              <div>
+                <p class="font-bold">اعتبار ویژه 5%</p>
+                <p class="text-sm text-gray-300">مخصوص شما</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
         <!-- ردیف سوم: پنج عکس -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -413,7 +477,7 @@ text-[#FF9549] text-2xl"></i>
         <img src="/assests/images/img.png" alt="TANK 300" class="w-full md:w-64 rounded-md" />
         <div class="md:ml-6 flex-1 mt-4 md:mt-0">
           <h3 class="text-xl font-bold">kmc-A5</h3>
-          <p class="text-sm text-gray-300 mb-2">دارای بدنه قوی و دنده اتومات  </p>
+          <p class="text-sm text-gray-300 mb-2">دارای بدنه قوی و دنده اتومات </p>
           <div class="text-sm mb-4">
             <span class="line-through text-gray-400">3 649 000 ₽</span>
           </div>
